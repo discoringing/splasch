@@ -1,0 +1,117 @@
+/**
+ * Theme Name: Blocksy Child
+ * Description: Blocksy Child theme
+ * Author: Creative Themes
+ * Template: blocksy
+ * Text Domain: blocksy
+ */
+ 
+.scroll-tabella {
+    width: 100%;
+    overflow-x: auto;
+    border: 2px solid #ccc;
+}
+
+.tabella-modelli {
+    width: max-content;
+    min-width: 3500px;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+
+.tabella-modelli th,
+.tabella-modelli td {
+    border: 1px solid #ddd;
+    padding: 6px;
+}
+
+.tabella-modelli th {
+    background: #f5f5f5;
+    white-space: nowrap;
+}
+
+.tabella-modelli input {
+    width: 150px;
+}
+
+.tabella-modelli textarea {
+    width: 300px;
+    min-width: 300px;
+    height: 120px;
+}
+
+.tabella-modelli tr:nth-child(even) {
+    background: #fafafa;
+}
+/* BLOCCO TITOLO + ICONA */
+.sezione {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* ICONA GENERICA */
+.sezione::before {
+    content: "";
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.sezione {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.sezione::before {
+    content: "";
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* icone */
+.sezione.info::before {
+    background-image: url('/wp-content/themes/blocksy-child/icone/1_INFORMAZIONI.png');
+}
+
+.sezione.rilievo::before {
+    background-image: url('/wp-content/themes/blocksy-child/icone/2_RILIEVO.png');
+}
+
+.sezione.rappresentazioni::before {
+    background-image: url('/wp-content/themes/blocksy-child/icone/3_RAPPRESENTAZIONI.png');
+}
+
+.sezione.modellazioni::before {
+    background-image: url('/wp-content/themes/blocksy-child/icone/4_MODELLAZIONI_TRIDIMENSIONALI.png');
+}
+
+.sezione.virtual::before {
+    background-image: url('/wp-content/themes/blocksy-child/icone/5_VIRTUAL_TOUR.png');
+}
+
+.sezione.documentazione::before {
+    background-image: url('/wp-content/themes/blocksy-child/icone/6_DOCUMENTAZIONE_ARCHIVIO.png');
+}
+
+.sezione.pubblicazioni::before {
+    background-image: url('/wp-content/themes/blocksy-child/icone/7_PUBBLICAZIONI_CONSULTATE.png');
+}
+
+.sezione.gruppo::before {
+    background-image: url('/wp-content/themes/blocksy-child/icone/8_PUBBLICAZIONI_GRUPPO_RIC.png');
+}
+
+.sezione.bibliografia::before {
+    background-image: url('/wp-content/themes/blocksy-child/icone/9_BIBLIOGRAFIA.png');
+}
+
+.sezione.schedatura::before {
+    background-image: url('/wp-content/themes/blocksy-child/icone/10_SCHEDATURA.png');
+}

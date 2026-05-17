@@ -1,0 +1,400 @@
+/* ===== GRIGLIA ===== */
+.griglia-modelli {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* ===== CARD ===== */
+.card-modello {
+    text-align: center;
+}
+
+/* ===== IMMAGINI QUADRATE ===== */
+.griglia-modelli .card-modello img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+/* ===== TITOLO ===== */
+.griglia-modelli h3 {
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+}
+
+/* ===== ICONE (ALLINEATE SU UNA RIGA) ===== */
+.griglia-modelli .icone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 6px;
+    flex-wrap: nowrap; /* ✅ impedisce andare a capo */
+}
+
+/* ===== LINK ICONE ===== */
+.griglia-modelli .icone a {
+    display: inline-block;
+    font-size: 18px;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+/* ===== HOVER ICONE ===== */
+.griglia-modelli .icone a:hover {
+    transform: scale(1.2);
+}
+
+
+
+/* Base sezione */
+.sezione {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 22px;
+    color: #5aa6c8;
+    margin-top: 30px;
+}
+
+/* Box icona */
+.sezione .icona {
+    width: 28px;
+    height: 28px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* ICONE PERSONALIZZATE */
+.sezione.info .icona {
+    background-image: url('/wp-content/uploads/icona-info.png');
+}
+
+.sezione.rilievo .icona {
+    background-image: url('/wp-content/uploads/icona-rilievo.png');
+}
+
+.sezione.rappresentazioni .icona {
+    background-image: url('/wp-content/uploads/icona-rappresentazione.png');
+}
+
+.sezione.modellazioni .icona {
+    background-image: url('/wp-content/uploads/icona-3d.png');
+}
+
+.sezione.virtual .icona {
+    background-image: url('/wp-content/uploads/icona-virtual.png');
+}
+
+.sezione.archivio .icona {
+    background-image: url('/wp-content/uploads/icona-archivio.png');
+}
+
+.sezione.bibliografia .icona {
+    background-image: url('/wp-content/uploads/icona-libro.png');
+}
+
+.sezione.pubblicazioni .icona {
+    background-image: url('/wp-content/uploads/icona-doc.png');
+}
+
+.sezione.gruppo .icona {
+    background-image: url('/wp-content/uploads/icona-gruppo.png');
+}
+
+.sezione.schedatura .icona {
+    background-image: url('/wp-content/uploads/icona-scheda.png');
+}
+
+
+/* FORM SEZIONI */
+.form-sezione {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    margin-top: 25px;
+}
+
+/* icona */
+.form-sezione .icona {
+    width: 22px;
+    height: 22px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+/* ===== FORM SEZIONI (icone come TOC) ===== */
+.form-sezione {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #00AEEF;
+    font-weight: bold;
+}
+
+/* icona */
+.form-sezione .icona {
+    width: 64px;
+    height: 64px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.form-sezione.info .icona {
+    background-image: url('https://www.splasch.unina.it/wp-content/uploads/img/1_INFORMAZIONI.png');
+}
+
+.form-sezione.rilievo .icona {
+    background-image: url('https://www.splasch.unina.it/wp-content/uploads/img/2_RILIEVO.png');
+}
+
+.form-sezione.rappresentazioni .icona {
+    background-image: url('https://www.splasch.unina.it/wp-content/uploads/img/3_RAPPRESENTAZIONI.png');
+}
+
+.form-sezione.modellazioni .icona {
+    background-image: url('https://www.splasch.unina.it/wp-content/uploads/img/4_MODELLAZIONI%20TRIDIMENSIONALI.png');
+}
+
+.form-sezione.virtual .icona {
+    background-image: url('https://www.splasch.unina.it/wp-content/uploads/img/5_VIRTUAL%20TOUR.png');
+}
+
+.form-sezione.archivio .icona {
+    background-image: url('https://www.splasch.unina.it/wp-content/uploads/img/6_DOCUMENTAZIONE%20ARCHIVIO.png');
+}
+
+.form-sezione.bibliografia .icona {
+    background-image: url('https://www.splasch.unina.it/wp-content/uploads/img/9_BIBLIOGRAFIA.png');
+}
+
+.form-sezione.pubblicazioni .icona {
+    background-image: url('https://www.splasch.unina.it/wp-content/uploads/img/7_PUBBLICAZIONI%20CONSULTATE.png');
+}
+
+.form-sezione.gruppo .icona {
+    background-image: url('https://www.splasch.unina.it/wp-content/uploads/img/8_PUBBLICAZIONI%20GRUPPO%20RIC.png');
+}
+
+.form-sezione.schedatura .icona {
+    background-image: url('https://www.splasch.unina.it/wp-content/uploads/2025/02/10_SCHEDATURA.png');
+}
+
+
+
+
+
+.scheda-container {
+    max-width: 900px;
+    margin: auto;
+}
+
+.titolo-scheda {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+/* icone link */
+.link-icone a {
+    font-size: 26px;
+    margin-right: 10px;
+}
+
+/* sezioni */
+.sezione {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #00AEEF;
+    margin-top: 40px;
+    border-bottom: 2px solid #00AEEF;
+    padding-bottom: 5px;
+}
+
+/* icone */
+.sezione .icona {
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* contenuto */
+.contenuto {
+    margin-top: 10px;
+}
+
+.immagine-scheda img {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+.sezione {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #00AEEF;
+    font-size: 22px;
+    margin-top: 30px;
+}
+
+.sezione .icona {
+    width: 63px;
+    height: 63px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.sezione.info .icona {
+    background-image: url('https://www.splasch.unina.it/wp-content/uploads/img/1_INFORMAZIONI.png');
+}
+
+.sezione.rilievo .icona {
+    background-image: url('https://www.splasch.unina.it/wp-content/uploads/img/2_RILIEVO.png');
+}
+
+.sezione.rappresentazioni .icona {
+    background-image: url('https://www.splasch.unina.it/wp-content/uploads/img/3_RAPPRESENTAZIONI.png');
+}
+
+.sezione.modellazioni .icona {
+    background-image: url('https://www.splasch.unina.it/wp-content/uploads/img/4_MODELLAZIONI%20TRIDIMENSIONALI.png');
+}
+
+.sezione.virtual .icona {
+    background-image: url('https://www.splasch.unina.it/wp-content/uploads/img/5_VIRTUAL%20TOUR.png');
+}
+
+.sezione.archivio .icona {
+    background-image: url('https://www.splasch.unina.it/wp-content/uploads/img/6_DOCUMENTAZIONE%20ARCHIVIO.png');
+}
+
+.sezione.bibliografia .icona {
+    background-image: url('https://www.splasch.unina.it/wp-content/uploads/img/9_BIBLIOGRAFIA.png');
+}
+
+.sezione.pubblicazioni .icona {
+    background-image: url('https://www.splasch.unina.it/wp-content/uploads/img/7_PUBBLICAZIONI%20CONSULTATE.png');
+}
+
+.sezione.gruppo .icona {
+    background-image: url('https://www.splasch.unina.it/wp-content/uploads/img/8_PUBBLICAZIONI%20GRUPPO%20RIC.png');
+}
+
+.sezione.schedatura .icona {
+    background-image: url('https://www.splasch.unina.it/wp-content/uploads/img/10_SCHEDATURA.png');
+}
+
+.header-scheda img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+
+.gestione-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    z-index: 9999;
+}
+
+.popup-content {
+    position: relative;
+    width: 80%;
+    height: 80%;
+    margin: 5% auto;
+    background: white;
+}
+
+.popup-content iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.chiudi {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.header-scheda-full {
+    position: relative;
+    width: 100vw;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+.header-scheda-full img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* CONTENITORE SCROLL */
+.scroll-tabella {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    border: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+/* TABELLA */
+.tabella-modelli {
+    min-width: 2200px;
+    border-collapse: collapse;
+    font-size: 12px;
+}
+
+/* CELLE */
+.tabella-modelli td,
+.tabella-modelli th {
+    border: 1px solid #ddd;
+    padding: 5px;
+    vertical-align: top;
+}
+
+/* HEADER */
+.tabella-modelli th {
+    background: #f5f5f5;
+    position: sticky;
+    top: 0;
+}
+
+/* INPUT */
+.tabella-modelli input {
+    width: 150px;
+}
+
+/* TEXTAREA (300px come volevi) */
+.tabella-modelli textarea {
+    width: 300px;
+    min-height: 120px;
+    resize: vertical;
+}
+``
